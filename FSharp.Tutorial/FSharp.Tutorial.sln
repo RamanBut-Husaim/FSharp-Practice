@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "FSharp.Tutorial", "FSharp.Tutorial\FSharp.Tutorial.fsproj", "{73E7978D-3E70-48F6-A329-A89A64F20282}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73E7978D-3E70-48F6-A329-A89A64F20282}.Debug|x86.ActiveCfg = Debug|x86
+		{73E7978D-3E70-48F6-A329-A89A64F20282}.Debug|x86.Build.0 = Debug|x86
+		{73E7978D-3E70-48F6-A329-A89A64F20282}.Release|x86.ActiveCfg = Release|x86
+		{73E7978D-3E70-48F6-A329-A89A64F20282}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

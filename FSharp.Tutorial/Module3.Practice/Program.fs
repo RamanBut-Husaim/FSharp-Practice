@@ -1,68 +1,75 @@
 ﻿// Learn more about F# at http://fsharp.net
 // See the 'F# Tutorial' project for more help.
 
-open System
+module Main
 
-type person = {
-    name: string;
-    age: int;
-    id: int
-}
+    open System
 
-let defaultPerson = 
-    { name = String.Empty; age = 0; id = 0 }
-
-let createPerson name age = 
-    { name = name; age = age; id = (String.length name) * age }
-
-let getMainUser = 
-    Console.WriteLine("Enter the main user name: ")
-    let name = Console.ReadLine()
-    Console.WriteLine("Enter the main user age: ")
-    let age = Console.ReadLine()
-    createPerson name (int age)
-
-let getUsersCount = 
-    Console.WriteLine("Enter the number of users: ")
-    let usersCount = Console.ReadLine()
-    (int usersCount)
-
-let getUser = 
-    Console.WriteLine("Enter the user name: ")
-    let name = Console.ReadLine()
-    Console.WriteLine("Enter ther user age: ")
-    let age = Console.ReadLine()
-    createPerson name (int age)
-
-let getUsers = 
-    let numberOfUsers = getUsersCount
-    let users = Array.create numberOfUsers defaultPerson
-    for i = 0 to numberOfUsers - 1 do
-        let user = getUser
-        Array.set users i user
-    users
-
-let findMatchingUsers mainUser users = 
-    seq {
-        for user in users do
-            if mainUser.id = user.id then
-                yield user
+    type person = {
+        name: string;
+        age: int;
+        id: int
     }
 
-let displayUser user = 
-    printfn "%A" user
+    let defaultPerson = 
+        { name = String.Empty; age = 0; id = 0 }
 
-let displayMatchingUsers users =
-    printfn "Matching users:"
-    for user in users do
-        displayUser user
-    0
+    let createPerson name age = 
+        { name = name; age = age; id = (String.length name) * age }
 
-[<EntryPoint>]
-let main argv = 
-    let mainUser = getMainUser
-    let users = getUsers
-    let matchingUsers = findMatchingUsers mainUser users
-    ignore (displayMatchingUsers matchingUsers)
+    let getMainUser = 
+        Console.WriteLine("Enter the main user name: ")
+        let name = Console.ReadLine()
+        Console.WriteLine("Enter the main user age: ")
+        let age = Console.ReadLine()
 
-    0 // return an integer exit code
+        createPerson name (int age)
+
+    let getUsersCount = 
+        Console.WriteLine("Enter the number of users: ")
+        let usersCount = Console.ReadLine()
+
+        (int usersCount)
+
+    let getUser index = 
+        Console.WriteLine("Enter the user name: ")
+        let name = Console.ReadLine()
+        Console.WriteLine("Enter ther user age: ")
+        let age = Console.ReadLine()
+
+        createPerson name (int age)
+
+    let getUsers numberOfUsers = 
+        let users = Array.create numberOfUsers defaultPerson
+        for i = 0 to numberOfUsers - 1 do
+            let user = getUser i
+            Array.set users i user
+        
+        users
+
+    let findMatchingUsers mainUser users = 
+        seq {
+            for user in users do
+                if mainUser.id = user.id then
+                    yield user
+        }
+
+    let displayUser user = 
+        printfn "%A" user
+
+    let displayMatchingUsers users =
+        printfn "Matching users:"
+        for user in users do
+            displayUser user
+
+        0
+
+    [<EntryPoint>]
+    let main argv = 
+        let mainUser = getMainUser
+        let numberOfUsers = getUsersCount
+        let users = getUsers numberOfUsers
+        let matchingUsers = findMatchingUsers mainUser users
+        ignore (displayMatchingUsers matchingUsers)
+
+        0 // return an integer exit code

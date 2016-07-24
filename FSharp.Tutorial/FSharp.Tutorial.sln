@@ -15,6 +15,8 @@ Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Module3.Practice", "Module3
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Module3.Assignment", "Module3.Assignment\Module3.Assignment.fsproj", "{A125CA51-4994-41CF-9D73-7CA0F30C50FA}"
 EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Module4.Practice", "Module4.Practice\Module4.Practice.fsproj", "{F0973B8E-9D26-49B6-A9A0-8C3637F6A17E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -49,6 +51,10 @@ Global
 		{A125CA51-4994-41CF-9D73-7CA0F30C50FA}.Debug|x86.Build.0 = Debug|x86
 		{A125CA51-4994-41CF-9D73-7CA0F30C50FA}.Release|x86.ActiveCfg = Release|x86
 		{A125CA51-4994-41CF-9D73-7CA0F30C50FA}.Release|x86.Build.0 = Release|x86
+		{F0973B8E-9D26-49B6-A9A0-8C3637F6A17E}.Debug|x86.ActiveCfg = Debug|x86
+		{F0973B8E-9D26-49B6-A9A0-8C3637F6A17E}.Debug|x86.Build.0 = Debug|x86
+		{F0973B8E-9D26-49B6-A9A0-8C3637F6A17E}.Release|x86.ActiveCfg = Release|x86
+		{F0973B8E-9D26-49B6-A9A0-8C3637F6A17E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

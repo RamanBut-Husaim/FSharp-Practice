@@ -15,15 +15,15 @@ type Entry =
 [<Literal>]
 let gravityConstant = 9.81
 
-let calculateAngle entry = Math.Atan2(entry.Y, entry.X)
+let calculateAngle entry = atan2 entry.Y entry.X
 
 let calculateDistance entry = 
     let angle = calculateAngle entry
-    (Math.Pow(entry.Speed, 2.0) * Math.Sin(2.0 * angle)) / gravityConstant
+    (entry.Speed ** 2.0 * sin (2.0 * angle)) / gravityConstant
 
 let calculateAngleReach entry =
-    let arcSinValue = (gravityConstant * entry.ExpectedDistance) / Math.Pow(entry.Speed, 2.0)
-    0.5 * Math.Asin(arcSinValue)
+    let arcSinValue = (gravityConstant * entry.ExpectedDistance) / entry.Speed ** 2.0
+    0.5 * asin arcSinValue
 
 let getEntries (filePath : string) = 
     use streamReader = new StreamReader(filePath)

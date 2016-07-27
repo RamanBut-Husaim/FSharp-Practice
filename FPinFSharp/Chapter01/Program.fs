@@ -36,8 +36,8 @@ let rec sum tup =
 
 // exercise 1.8
 let a = 5
-let f a = a + 1
-let g b = (f b) + a
+let f1 a = a + 1
+let g1 b = (f1 b) + a
 
 [<EntryPoint>]
 let main argv = 

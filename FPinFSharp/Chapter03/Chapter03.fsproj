@@ -45,6 +45,7 @@
     <Compile Include="Vector.fs" />
     <Compile Include="QuadraticEquations.fs" />
     <Compile Include="RationalNumbers.fs" />
+    <Compile Include="TaggedValues.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />

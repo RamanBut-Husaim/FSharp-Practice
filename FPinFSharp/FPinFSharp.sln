@@ -5,6 +5,8 @@ Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chapter01", "Chapter01\Chap
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chapter02", "Chapter02\Chapter02.fsproj", "{DDDD08DB-77B6-4A2F-A045-99752D48F41E}"
 EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chapter03", "Chapter03\Chapter03.fsproj", "{D88D015C-DF20-48C2-946F-38E1B678C952}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{DDDD08DB-77B6-4A2F-A045-99752D48F41E}.Debug|x86.Build.0 = Debug|x86
 		{DDDD08DB-77B6-4A2F-A045-99752D48F41E}.Release|x86.ActiveCfg = Release|x86
 		{DDDD08DB-77B6-4A2F-A045-99752D48F41E}.Release|x86.Build.0 = Release|x86
+		{D88D015C-DF20-48C2-946F-38E1B678C952}.Debug|x86.ActiveCfg = Debug|x86
+		{D88D015C-DF20-48C2-946F-38E1B678C952}.Debug|x86.Build.0 = Debug|x86
+		{D88D015C-DF20-48C2-946F-38E1B678C952}.Release|x86.ActiveCfg = Release|x86
+		{D88D015C-DF20-48C2-946F-38E1B678C952}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

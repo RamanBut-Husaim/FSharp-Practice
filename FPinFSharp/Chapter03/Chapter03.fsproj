@@ -47,7 +47,11 @@
     <Compile Include="RationalNumbers.fs" />
     <Compile Include="TaggedValues.fs" />
     <Compile Include="PartialFunctions.fs" />
+    <Compile Include="Exercises\Exercise01.fs" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exercises\" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
 </Project>

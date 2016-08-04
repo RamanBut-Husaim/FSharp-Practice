@@ -1,4 +1,4 @@
-﻿module Exercise01
+﻿module Exercises.Exercise01
 
 type Period = 
     | AM

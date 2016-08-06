@@ -46,6 +46,7 @@
     <Compile Include="Polymorphism.fs" />
     <Compile Include="CashRegister.fs" />
     <Compile Include="MapColouring.fs" />
+    <Compile Include="Exercises\Exercise01.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>

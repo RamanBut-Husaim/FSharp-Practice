@@ -53,6 +53,7 @@
     <Compile Include="Exercises\Exercise05.fs" />
     <Compile Include="Exercises\Exercise06.fs" />
     <Compile Include="Exercises\Exercise07.fs" />
+    <Compile Include="Exercises\Exercise08.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>

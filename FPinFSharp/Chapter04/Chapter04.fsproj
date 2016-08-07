@@ -54,13 +54,12 @@
     <Compile Include="Exercises\Exercise06.fs" />
     <Compile Include="Exercises\Exercise07.fs" />
     <Compile Include="Exercises\Exercise08.fs" />
+    <Compile Include="Exercises\Exercise09.fs" />
+    <Compile Include="Exercises\Exercise10.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exercises\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Exercises\Exercise09.fsx" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
 </Project>

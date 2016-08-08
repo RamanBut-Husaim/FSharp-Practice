@@ -25,3 +25,20 @@ let rec insert elements value =
         x :: rest
     | x :: xs when x > value -> value :: x :: xs
     | xs -> xs
+
+let rec intersect elements = 
+    match elements with
+    | ([], []) | ([], _) | (_, []) -> []
+    | ([ x ], y :: ys) -> 
+        if x <> y then []
+        else [ x ]
+    | (x :: xs, [ y ]) -> 
+        if x <> y then []
+        else [ x ]
+    | (x1 :: x2 :: xs, y1 :: y2 :: ys) -> 
+        if x2 <> y2 then 
+            if x1 = x2 then intersect (x2 :: xs, y1 :: y2 :: ys)
+            else intersect (x1 :: x2 :: xs, y2 :: ys)
+        else 
+            let rest = intersect (x2 :: xs, y2 :: ys)
+            x1 :: rest

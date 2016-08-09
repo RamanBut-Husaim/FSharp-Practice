@@ -9,6 +9,8 @@ Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chapter03", "Chapter03\Chap
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chapter04", "Chapter04\Chapter04.fsproj", "{6A3119F1-B24A-40A9-B539-68DC288F0EE9}"
 EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Chapter04.Tests", "Chapter04.Tests\Chapter04.Tests.fsproj", "{4EA66370-75B6-48E4-9BF8-B9926A5C83B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,5 +33,9 @@ Global
 		{6A3119F1-B24A-40A9-B539-68DC288F0EE9}.Debug|x86.Build.0 = Debug|x86
 		{6A3119F1-B24A-40A9-B539-68DC288F0EE9}.Release|x86.ActiveCfg = Release|x86
 		{6A3119F1-B24A-40A9-B539-68DC288F0EE9}.Release|x86.Build.0 = Release|x86
+		{4EA66370-75B6-48E4-9BF8-B9926A5C83B8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4EA66370-75B6-48E4-9BF8-B9926A5C83B8}.Debug|x86.Build.0 = Debug|Any CPU
+		{4EA66370-75B6-48E4-9BF8-B9926A5C83B8}.Release|x86.ActiveCfg = Release|Any CPU
+		{4EA66370-75B6-48E4-9BF8-B9926A5C83B8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

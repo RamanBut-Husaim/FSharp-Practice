@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Exercises\Exercise12.fs" />
+    <Compile Include="Exercises\Exercise13.fs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

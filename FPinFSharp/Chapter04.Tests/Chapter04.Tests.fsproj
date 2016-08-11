@@ -40,9 +40,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
-    <Reference Include="FSharp.Core">
-      <HintPath>..\packages\FSharp.Core.3.1.2.5\lib\net40\FSharp.Core.dll</HintPath>
-    </Reference>
     <Reference Include="Unquote">
       <HintPath>..\packages\Unquote.3.1.2\lib\net45\Unquote.dll</HintPath>
     </Reference>
@@ -70,11 +67,15 @@
     <Reference Include="NHamcrest">
       <HintPath>..\packages\FsUnit.xUnit.1.4.1.0\lib\net45\NHamcrest.dll</HintPath>
     </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>..\packages\FSharp.Core.4.0.0.1\lib\net40\FSharp.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Exercises\Exercise12.fs" />
     <Compile Include="Exercises\Exercise13.fs" />
+    <Compile Include="Exercises\Exercise14.fs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

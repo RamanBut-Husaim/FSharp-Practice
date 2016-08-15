@@ -46,9 +46,9 @@
     <Compile Include="Exercises\Exercise13.fs" />
     <Compile Include="Exercises\Exercise14.fs" />
     <Compile Include="Exercises\Exercise15.fs" />
-    <None Include="packages.config" />
     <Compile Include="Exercises\Exercise19.fs" />
     <Compile Include="Exercises\Exercise22.fs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

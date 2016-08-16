@@ -5,7 +5,7 @@ module Core
 open System
 
 // Euclid's algorithm
-let rec gcd args = 
+let rec gcd args =
     match args with
     | (0, n) -> n
     | (m, n) -> gcd (n % m, m)
@@ -16,20 +16,20 @@ let g n = n + 4
 let h (x, y) = Math.Sqrt(x ** 2.0 + y ** 2.0)
 
 // exercise 1.4
-let rec f n = 
+let rec f n =
     match n with
     | 0 -> 0
     | n -> n + f (n - 1)
 
 // exercise 1.5
-let rec fib n = 
+let rec fib n =
     match n with
     | 0 -> 0
     | 1 -> 1
     | n -> fib (n - 1) + fib (n - 2)
 
 // exercise 1.6
-let rec sum tup = 
+let rec sum tup =
     match tup with
     | (m, 0) -> m
     | (m, n) -> (m + n) + sum (m, n - 1)
@@ -40,6 +40,6 @@ let f1 a = a + 1
 let g1 b = (f1 b) + a
 
 [<EntryPoint>]
-let main argv = 
+let main argv =
     printfn "%A" argv
     0 // return an integer exit code

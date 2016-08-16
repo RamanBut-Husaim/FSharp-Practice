@@ -1,7 +1,7 @@
 ﻿module Exercises.Exercise04
 
 // y = ax + b
-type StraightLine = 
+type StraightLine =
     { A : float
       B : float }
 

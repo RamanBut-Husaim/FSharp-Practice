@@ -1,6 +1,6 @@
 ﻿module Exercises.Exercise01
 
-type Period = 
+type Period =
     | AM
     | PM
 
@@ -11,21 +11,21 @@ let (<.) (x : int * int * Period) (y : int * int * Period) = restructureTimeOfDa
 let (=.) (x : int * int * Period) (y : int * int * Period) = restructureTimeOfDay x = restructureTimeOfDay y
 let (>.) (x : int * int * Period) (y : int * int * Period) = restructureTimeOfDay x > restructureTimeOfDay y
 
-type TimeOfDay = 
+type TimeOfDay =
     { Period : Period
       Hours : int
       Minutes : int }
 
-let timeOfDay03 = 
+let timeOfDay03 =
     { Hours = 11
       Minutes = 25
       Period = AM }
 
-let timeOfDay04 = 
+let timeOfDay04 =
     { Hours = 1
       Minutes = 3
       Period = PM }
 
-let (<..) x y = 
+let (<..) x y =
     if x.Period = y.Period then (x.Hours, x.Minutes) < (y.Hours, y.Minutes)
     else x.Period < y.Period

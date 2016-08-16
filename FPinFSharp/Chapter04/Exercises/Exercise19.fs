@@ -1,6 +1,6 @@
 ﻿module Chapter04.Exercises.Exercise19
 
-let rec isMember (x, y) elements = 
+let rec isMember (x, y) elements =
     match elements with
     | [] -> false
     | z :: zs -> (x, y) = z || (y, x) = z || (isMember (x, y) zs)

@@ -1,25 +1,25 @@
 ﻿module RationalNumbers
 
 // Euclid's algorithm
-let rec gcd args = 
+let rec gcd args =
     match args with
     | (0, n) -> n
     | (m, n) -> gcd (n % m, m)
 
 type Qnum = int * int
 
-let canc (p, q) = 
-    let sign = 
+let canc (p, q) =
+    let sign =
         if p * q < 0 then -1
         else 1
-    
+
     let ap = abs p
     let aq = abs q
     let d = gcd (ap, aq)
     (sign * (ap / d), aq / d)
 
-let mkQ = 
-    function 
+let mkQ =
+    function
     | (_, 0) -> failwith "Division by zero"
     | pr -> canc pr
 

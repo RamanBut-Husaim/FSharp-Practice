@@ -5,7 +5,7 @@ let isOdd number = number % 2 <> 0
 let rec rmoddInternal index elements =
     match elements with
     | [] -> []
-    | x :: xs -> 
+    | x :: xs ->
         let rest = rmoddInternal (index + 1) xs
         if isOdd x then rest
         else x :: rest

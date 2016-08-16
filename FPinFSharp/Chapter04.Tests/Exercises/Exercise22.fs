@@ -20,7 +20,7 @@
         [<Fact>]
         let ``multiplyByX - when the list is empty - zero is added`` () =
             multiplyByX [] |> should equal [0]
-        
+
         [<Fact>]
         let ``multiplyByX - when the coefficients are specified - zero is added as the first coefficient`` () =
             multiplyByX [3; 12; 2; 3; 5] |> should equal [0; 3; 12; 2; 3; 5]
@@ -30,11 +30,11 @@
         [<Fact>]
         let ``|+| - when polynoms have equal power - they are added correctly`` () =
             [3; 4; 8] |+| [1; 7; 12] |> should equal [4; 11; 20]
-        
+
         [<Fact>]
         let ``|+| - when the first polynom is higher than the second one - they are added properly`` () =
             [1; 12; 3; 4; 1] |+| [3; 1; 4] |> should equal [4; 13; 7; 4; 1]
-        
+
         [<Fact>]
         let ``|+| - when the second polynom is higher than the first one - they are added properly`` () =
             [3; 2; 5] |+| [2; 1; 3; 1; 5] |> should equal [5; 3; 8; 1; 5]
@@ -59,7 +59,7 @@
             toString [3; 4] |> should equal "4x + 3"
             toString [5; 12; 4; 2] |> should equal "2x^3 + 4x^2 + 12x + 5"
             toString [3; 1; 4; 1; 7] |> should equal "7x^4 + x^3 + 4x^2 + x + 3"
-        
+
         [<Fact>]
         let ``toString - when there are zero coefficients - they are omitted`` () =
             toString [3; 2; 0; 5] |> should equal "5x^3 + 2x + 3"

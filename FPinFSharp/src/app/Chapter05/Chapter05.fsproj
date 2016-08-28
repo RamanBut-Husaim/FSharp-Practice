@@ -45,6 +45,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Lists.fs" />
     <Compile Include="Sets.fs" />
+    <Compile Include="Maps.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
 </Project>

@@ -65,3 +65,16 @@
         let tryFindResult = List.tryFind (fun x -> x > 3) [1; 5; -2; 8]
 
         let filterResult = List.filter (fun x -> x > 3) [1; 5; -2; 8]
+    module ``fold`` =
+        let norm (x1: float, y1: float) = sqrt(x1 * x1 + y1 * y1)
+        let vs = [(1.0, 2.0); (2.0, 3.0); (4.0, 5.0)]
+        let sumOfNorms vectors = List.fold (fun state (x, y) -> state + norm(x, y)) 0.0 vectors
+
+        let length elements = List.fold (fun e _ -> e + 1) 0 elements
+
+        let reverse elements = List.fold (fun xs x -> x :: xs) [] elements
+
+    module ``fold back`` =
+        let append ys zs = List.foldBack (fun x xs -> x :: xs) ys zs
+
+        let unzip elements = List.foldBack (fun (x, y) (xs, ys) -> (x :: xs, y :: ys)) elements ([], [])

@@ -4,7 +4,7 @@ open Fake
 open Fake.Paket
 open Fake.Testing
 
-Restore (fun p -> p)
+Restore id
 
 // Properties
 let buildDir = "./bin/app"

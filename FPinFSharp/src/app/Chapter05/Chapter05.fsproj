@@ -46,6 +46,7 @@
     <Compile Include="Lists.fs" />
     <Compile Include="Sets.fs" />
     <Compile Include="Maps.fs" />
+    <Compile Include="Exercises/Exercise01.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
 </Project>

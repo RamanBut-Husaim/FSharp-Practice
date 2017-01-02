@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />
+    <Compile Include="Exercises/Exercise01.fs" />
   </ItemGroup>
   <Import Project="$(FSharpTargetsPath)" />
   <Choose>

@@ -1,6 +1,7 @@
 source https://api.nuget.org/v3/index.json
 
 nuget FAKE
+nuget FSharp.Core
 nuget FsUnit 2.3.1 framework: >= net45
 nuget FsUnit.xUnit 1.4.1.0 framework: >= net45
 nuget xunit.runner.console 2.1.0 framework: >= net45

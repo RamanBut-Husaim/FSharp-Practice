@@ -1,2 +1,4 @@
 FsUnit
+FSharp.Core
 FsUnit.xUnit
+xunit.runner.console

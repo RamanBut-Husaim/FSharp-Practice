@@ -53,6 +53,7 @@
   <ItemGroup>
     <None Include="paket.references" />
     <Compile Include="Exercises/Exercise01.fs" />
+    <Compile Include="Exercises/Exercise02.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">14</MinimumVisualStudioVersion>

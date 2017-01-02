@@ -21,4 +21,3 @@ module Chapter05.Tests.Exercises.Exercise01
 
         // assert
         actual |> should equal expected
-        ()
